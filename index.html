@@ -1,81 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <title>CCD SPA</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CCD SPA</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f3f4f6;
+}
 
-    header {
-      background: #1e3a8a;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
+/* HEADER */
+header {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
 
-    nav {
-      background: #111827;
-      padding: 10px;
-      text-align: center;
-    }
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
 
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+/* NAV */
+nav {
+  background: #111827;
+  padding: 15px;
+  text-align: center;
+}
 
-    section {
-      padding: 40px;
-      max-width: 1000px;
-      margin: auto;
-      background: white;
-      margin-top: 20px;
-      border-radius: 10px;
-    }
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-    h2 {
-      color: #1e3a8a;
-    }
+/* SECTIONS */
+section {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+}
 
-    .card {
-      background: #f9fafb;
-      padding: 20px;
-      border-radius: 10px;
-      margin-bottom: 15px;
-    }
+/* TITLES */
+h2 {
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
 
-    footer {
-      background: #111827;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 30px;
-    }
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
 
-    .btn {
-      display: inline-block;
-      background: #1e3a8a;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      margin-top: 10px;
-    }
-  </style>
+/* CARD */
+.card {
+  background: #f9fafb;
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.1);
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 15px;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+  background: #111827;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+</style>
+
 </head>
 
 <body>
 
 <header>
-  <h1>CCD - SPA</h1>
+  <h1>CCD SPA</h1>
   <p>Centro Cultural e Desportivo dos Trabalhadores</p>
 </header>
 
@@ -89,78 +114,100 @@
 <section id="sobre">
   <h2>O que é o CCD</h2>
   <p>
-    O Centro Cultural e Desportivo dos Trabalhadores da Sociedade Portuguesa de Autores
-    foi fundado a 3 de Janeiro de 1977, sendo uma organização autónoma com gestão própria.
+    O CCD da Sociedade Portuguesa de Autores foi fundado em 1977, sendo uma organização autónoma com gestão própria.
   </p>
   <p>
-    Inserido na SPA e inscrito no INATEL com o nº 995, o CCD tem como missão promover
-    atividades culturais, desportivas e recreativas para os seus associados.
+    Tem como missão promover atividades culturais, desportivas e recreativas, proporcionando maior qualidade de vida aos seus associados.
   </p>
 </section>
 
 <section id="historia">
   <h2>História</h2>
   <p>
-    Ao longo de mais de 30 anos, o CCD tem desenvolvido inúmeras atividades que
-    contribuíram para o bem-estar dos seus associados.
+    Ao longo de décadas, o CCD desenvolveu atividades que marcaram os seus associados:
   </p>
 
-  <div class="card">Passeios turísticos em Portugal e no estrangeiro</div>
-  <div class="card">Torneios de ténis de mesa entre CCD’s</div>
-  <div class="card">Jogos de futebol com entidades como a SGAE</div>
-  <div class="card">Grupo de Teatro e Festival de Teatro Amador</div>
-  <div class="card">Participação em campeonatos nacionais do INATEL</div>
-
-  <p>
-    Desde 1989, o CCD estendeu as suas atividades a todos os trabalhadores intelectuais
-    representados pela SPA.
-  </p>
+  <div class="grid">
+    <div class="card">Passeios turísticos nacionais e internacionais</div>
+    <div class="card">Torneios de ténis de mesa</div>
+    <div class="card">Eventos desportivos e futebol</div>
+    <div class="card">Grupo e Festival de Teatro</div>
+    <div class="card">Participação no INATEL</div>
+  </div>
 </section>
 
 <section id="beneficios">
-  <h2>Benefícios para Sócios</h2>
+  <h2>Benefícios</h2>
 
-  <div class="card">
-    <strong>Descontos comerciais</strong><br>
-    Protocolos com estabelecimentos para preços mais acessíveis.
+  <div class="grid">
+    <div class="card">
+      <h3>Descontos</h3>
+      <p>Protocolos com diversos estabelecimentos.</p>
+    </div>
+
+    <div class="card">
+      <h3>Livros</h3>
+      <p>Redução até 30% em editoras.</p>
+    </div>
+
+    <div class="card">
+      <h3>Saúde</h3>
+      <p>Comparticipação em receituário médico.</p>
+    </div>
+
+    <div class="card">
+      <h3>Farmácia</h3>
+      <p>Descontos em medicamentos.</p>
+    </div>
+
+    <div class="card">
+      <h3>Apoio Jurídico</h3>
+      <p>Consulta inicial gratuita.</p>
+    </div>
+
+    <div class="card">
+      <h3>Eventos</h3>
+      <p>Natal, Páscoa e iniciativas sociais.</p>
+    </div>
   </div>
-
-  <div class="card">
-    <strong>Aquisição de livros</strong><br>
-    Descontos entre 20% a 30%.
-  </div>
-
-  <div class="card">
-    <strong>Comparticipação médica</strong><br>
-    Reembolso de 50% até 10€/ano.
-  </div>
-
-  <div class="card">
-    <strong>Farmácia</strong><br>
-    Descontos em medicamentos e produtos.
-  </div>
-
-  <div class="card">
-    <strong>Apoio jurídico</strong><br>
-    Primeira consulta gratuita.
-  </div>
-
-  <div class="card">
-    <strong>Eventos e iniciativas</strong><br>
-    Festa de Natal, Páscoa, Dia da Mulher e apoio social aos associados.
-  </div>
-
 </section>
 
 <section id="protocolos">
   <h2>Protocolos</h2>
-  <p>
-    Consulte todos os protocolos disponíveis com os nossos parceiros.
-  </p>
 
-  <a class="btn" href="https://intranet.spautores.net/protocolos/" target="_blank">
-    Ver Protocolos
-  </a>
+  <h3>🎯 Lazer</h3>
+  <div class="grid">
+    <div class="card">
+      <h3>🐘 Jardim Zoológico</h3>
+      <p>Descontos em bilhetes para o Zoo.</p>
+      <a class="btn" href="https://intranet.spautores.net/wp-content/docsspa/CCD/protocolos/Bilhetes%20ZOO%20CCD%202026.pdf" target="_blank">Ver Protocolo</a>
+    </div>
+
+    <div class="card">
+      <h3>🎶 JAZZY Dance</h3>
+      <p>Aulas de dança com condições especiais.</p>
+      <a class="btn" href="https://intranet.spautores.net/wp-content/docsspa/CCD/protocolos/An%C3%BAncio%20de%20Protocolo%20JAZZY.pdf" target="_blank">Ver Protocolo</a>
+    </div>
+  </div>
+
+  <h3>💊 Saúde</h3>
+  <div class="grid">
+    <div class="card">
+      <h3>👓 Ergovisão</h3>
+      <p>Descontos em ótica e consultas.</p>
+      <a class="btn" href="https://intranet.spautores.net/wp-content/docsspa/CCD/protocolos/An%C3%BAncio%20de%20Protocolo%20Ergovis%C3%A3o.pdf" target="_blank">Ver Protocolo</a>
+    </div>
+  </div>
+
+  <h3>🌱 Bem-estar</h3>
+  <div class="grid">
+    <div class="card">
+      <h3>🧼 NATULIM</h3>
+      <p>Produtos ecológicos com desconto.</p>
+      <a class="btn" href="https://intranet.spautores.net/wp-content/docsspa/CCD/protocolos/An%C3%BAncio%20de%20Protocolo%20NATULIM.pdf" target="_blank">Ver Protocolo</a>
+    </div>
+  </div>
+
 </section>
 
 <footer>
