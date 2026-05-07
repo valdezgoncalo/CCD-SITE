@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CCD SPA | Protocolos</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0b0f19;
+    color:white;
+    font-family:'Segoe UI',sans-serif;
+    overflow-x:hidden;
+}
+
+.topbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:999;
+    background:rgba(0,0,0,0.7);
+    backdrop-filter:blur(12px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+}
+
+.logo{
+    font-size:1.6rem;
+    font-weight:800;
+    color:#3b82f6;
+}
+
+.hero{
+    height:60vh;
+    background:
+    linear-gradient(to top,#0b0f19 5%,rgba(0,0,0,0.3)),
+    url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop') center/cover;
+    display:flex;
+    align-items:end;
+    padding:60px;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:1.2rem;
+    opacity:0.9;
+}
+
+.container{
+    padding:50px;
+}
+
+.category{
+    margin-bottom:70px;
+}
+
+.category h2{
+    margin-bottom:25px;
+    font-size:2rem;
+}
+
+.row{
+    display:flex;
+    gap:25px;
+    overflow-x:auto;
+    padding-bottom:10px;
+}
+
+.card{
+    min-width:320px;
+    background:#111827;
+    border-radius:18px;
+    overflow:hidden;
+    transition:0.4s;
+    flex-shrink:0;
+}
+
+.card:hover{
+    transform:scale(1.05);
+    box-shadow:0 20px 50px rgba(37,99,235,0.35);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:22px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#2563eb;
+    color:white;
+    padding:12px 18px;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+footer{
+    background:#05070d;
+    text-align:center;
+    padding:40px;
+    opacity:0.7;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+    <div class="logo">CCD SPA</div>
+</div>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Protocolos Exclusivos</h1>
+        <p>Benefícios, descontos e vantagens para associados CCD SPA.</p>
+    </div>
+</section>
+
+<div class="container">
+
+<div class="category">
+<h2>🎯 Lazer</h2>
+
+<div class="row">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?q=80&w=1974&auto=format&fit=crop">
+<div class="card-content">
+<h3>🐘 Jardim Zoológico</h3>
+<p>Descontos exclusivos para associados CCD SPA.</p>
+<a class="btn" href="protocolos/zoo.html">Ver Benefício</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?q=80&w=1974&auto=format&fit=crop">
+<div class="card-content">
+<h3>🎶 JAZZY Dance</h3>
+<p>Condições especiais em aulas e packs de dança.</p>
+<a class="btn" href="protocolos/jazzy.html">Ver Benefício</a>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="category">
+<h2>💊 Saúde</h2>
+
+<div class="row">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=1974&auto=format&fit=crop">
+<div class="card-content">
+<h3>👓 Ergovisão</h3>
+<p>Benefícios em ótica, consultas e serviços.</p>
+<a class="btn" href="protocolos/ergovisao.html">Ver Benefício</a>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="category">
+<h2>🌱 Bem-estar</h2>
+
+<div class="row">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?q=80&w=1974&auto=format&fit=crop">
+<div class="card-content">
+<h3>🧼 NATULIM</h3>
+<p>Produtos ecológicos e sustentáveis com desconto.</p>
+<a class="btn" href="protocolos/natulim.html">Ver Benefício</a>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<footer>
+CCD SPA © 2026
+</footer>
+
+</body>
+</html>
