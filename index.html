@@ -1,217 +1,301 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CCD SPA</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Protocolos CCD SPA</title>
 
 <style>
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #f3f4f6;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#f3f4f6;
+    color:#111827;
 }
 
 /* HEADER */
-header {
-  background: linear-gradient(135deg, #1e3a8a, #2563eb);
-  color: white;
-  text-align: center;
-  padding: 50px 20px;
+
+header{
+    background:linear-gradient(135deg,#0f172a,#1d4ed8);
+    padding:60px 20px;
+    text-align:center;
+    color:white;
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
 }
 
-/* NAV */
-nav {
-  background: #111827;
-  padding: 15px;
-  text-align: center;
+header p{
+    opacity:0.9;
+    font-size:1.1rem;
 }
 
-nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
+/* SECTION */
+
+.container{
+    max-width:1300px;
+    margin:auto;
+    padding:40px 20px;
 }
 
-/* SECTIONS */
-section {
-  max-width: 1100px;
-  margin: 30px auto;
-  padding: 30px;
-  background: white;
-  border-radius: 12px;
+.category{
+    margin-bottom:60px;
 }
 
-/* TITLES */
-h2 {
-  color: #1e3a8a;
-  margin-bottom: 20px;
+.category h2{
+    font-size:2rem;
+    color:#1d4ed8;
+    margin-bottom:25px;
+    border-left:6px solid #2563eb;
+    padding-left:15px;
 }
 
 /* GRID */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
 }
 
 /* CARD */
-.card {
-  background: #f9fafb;
-  padding: 20px;
-  border-radius: 12px;
-  transition: 0.3s;
-  text-align: center;
+
+.card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    transition:0.3s;
+    box-shadow:0 8px 25px rgba(0,0,0,0.06);
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 10px 25px rgba(0,0,0,0.1);
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* PREVIEW */
+
+.preview{
+    height:220px;
+    background:#e5e7eb;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+}
+
+.preview iframe{
+    width:100%;
+    height:100%;
+    border:none;
+}
+
+/* CONTENT */
+
+.content{
+    padding:20px;
+}
+
+.content h3{
+    margin-bottom:10px;
+    font-size:1.3rem;
+}
+
+.content p{
+    color:#4b5563;
+    line-height:1.5;
 }
 
 /* BUTTON */
-.btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 15px;
-  background: #2563eb;
-  color: white;
-  border-radius: 8px;
-  text-decoration: none;
+
+.btn{
+    display:inline-block;
+    margin-top:18px;
+    padding:12px 18px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    transition:0.3s;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#1d4ed8;
 }
 
 /* FOOTER */
-footer {
-  background: #111827;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-</style>
 
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
+
+</style>
 </head>
 
 <body>
 
 <header>
-  <h1>CCD SPA</h1>
-  <p>Centro Cultural e Desportivo dos Trabalhadores</p>
+    <h1>Protocolos CCD SPA</h1>
+    <p>Benefícios e parcerias exclusivas para associados</p>
 </header>
 
-<nav>
-  <a href="#sobre">Sobre</a>
-  <a href="#historia">História</a>
-  <a href="#beneficios">Benefícios</a>
-  <a href="#protocolos">Protocolos</a>
-</nav>
+<div class="container">
 
-<section id="sobre">
-  <h2>O que é o CCD</h2>
-  <p>
-    O CCD da Sociedade Portuguesa de Autores foi fundado em 1977, sendo uma organização autónoma com gestão própria.
-  </p>
-  <p>
-    Tem como missão promover atividades culturais, desportivas e recreativas, proporcionando maior qualidade de vida aos seus associados.
-  </p>
-</section>
+    <!-- LAZER -->
 
-<section id="historia">
-  <h2>História</h2>
-  <p>
-    Ao longo de décadas, o CCD desenvolveu atividades que marcaram os seus associados:
-  </p>
+    <div class="category">
 
-  <div class="grid">
-    <div class="card">Passeios turísticos nacionais e internacionais</div>
-    <div class="card">Torneios de ténis de mesa</div>
-    <div class="card">Eventos desportivos e futebol</div>
-    <div class="card">Grupo e Festival de Teatro</div>
-    <div class="card">Participação no INATEL</div>
-  </div>
-</section>
+        <h2>🎯 Lazer</h2>
 
-<section id="beneficios">
-  <h2>Benefícios</h2>
+        <div class="grid">
 
-  <div class="grid">
-    <div class="card">
-      <h3>Descontos</h3>
-      <p>Protocolos com diversos estabelecimentos.</p>
+            <!-- ZOO -->
+
+            <div class="card">
+
+                <div class="preview">
+                    <iframe 
+                    src="https://docs.google.com/gview?embedded=true&url=https://intranet.spautores.net/wp-content/docsspa/CCD/protocolos/Bilhetes%20ZOO%20CCD%202026.pdf">
+                    </iframe>
+                </div>
+
+                <div class="content">
+                    <h3>🐘 Jardim Zoológico</h3>
+
+                    <p>
+                        Descontos especiais para associados CCD SPA.
+                    </p>
+
+                    <a class="btn"
+                    href="https://intranet.spautores.net/wp-content/docsspa/CCD/protocolos/Bilhetes%20ZOO%20CCD%202026.pdf"
+                    target="_blank">
+                    Abrir Protocolo
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- JAZZY -->
+
+            <div class="card">
+
+                <div class="preview">
+                    <iframe 
+                    src="https://docs.google.com/gview?embedded=true&url=https://intranet.spautores.net/wp-content/docsspa/CCD/protocolos/An%C3%BAncio%20de%20Protocolo%20JAZZY.pdf">
+                    </iframe>
+                </div>
+
+                <div class="content">
+                    <h3>🎶 JAZZY Dance</h3>
+
+                    <p>
+                        Aulas e condições especiais para associados.
+                    </p>
+
+                    <a class="btn"
+                    href="https://intranet.spautores.net/wp-content/docsspa/CCD/protocolos/An%C3%BAncio%20de%20Protocolo%20JAZZY.pdf"
+                    target="_blank">
+                    Abrir Protocolo
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 
-    <div class="card">
-      <h3>Livros</h3>
-      <p>Redução até 30% em editoras.</p>
+    <!-- SAÚDE -->
+
+    <div class="category">
+
+        <h2>💊 Saúde</h2>
+
+        <div class="grid">
+
+            <div class="card">
+
+                <div class="preview">
+                    <iframe 
+                    src="https://docs.google.com/gview?embedded=true&url=https://intranet.spautores.net/wp-content/docsspa/CCD/protocolos/An%C3%BAncio%20de%20Protocolo%20Ergovis%C3%A3o.pdf">
+                    </iframe>
+                </div>
+
+                <div class="content">
+                    <h3>👓 Ergovisão</h3>
+
+                    <p>
+                        Benefícios em ótica, consultas e serviços especializados.
+                    </p>
+
+                    <a class="btn"
+                    href="https://intranet.spautores.net/wp-content/docsspa/CCD/protocolos/An%C3%BAncio%20de%20Protocolo%20Ergovis%C3%A3o.pdf"
+                    target="_blank">
+                    Abrir Protocolo
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 
-    <div class="card">
-      <h3>Saúde</h3>
-      <p>Comparticipação em receituário médico.</p>
+    <!-- BEM ESTAR -->
+
+    <div class="category">
+
+        <h2>🌱 Bem-estar</h2>
+
+        <div class="grid">
+
+            <div class="card">
+
+                <div class="preview">
+                    <iframe 
+                    src="https://docs.google.com/gview?embedded=true&url=https://intranet.spautores.net/wp-content/docsspa/CCD/protocolos/An%C3%BAncio%20de%20Protocolo%20NATULIM.pdf">
+                    </iframe>
+                </div>
+
+                <div class="content">
+                    <h3>🧼 NATULIM</h3>
+
+                    <p>
+                        Produtos ecológicos e sustentáveis com condições especiais.
+                    </p>
+
+                    <a class="btn"
+                    href="https://intranet.spautores.net/wp-content/docsspa/CCD/protocolos/An%C3%BAncio%20de%20Protocolo%20NATULIM.pdf"
+                    target="_blank">
+                    Abrir Protocolo
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 
-    <div class="card">
-      <h3>Farmácia</h3>
-      <p>Descontos em medicamentos.</p>
-    </div>
-
-    <div class="card">
-      <h3>Apoio Jurídico</h3>
-      <p>Consulta inicial gratuita.</p>
-    </div>
-
-    <div class="card">
-      <h3>Eventos</h3>
-      <p>Natal, Páscoa e iniciativas sociais.</p>
-    </div>
-  </div>
-</section>
-
-<section id="protocolos">
-  <h2>Protocolos</h2>
-
-  <h3>🎯 Lazer</h3>
-  <div class="grid">
-    <div class="card">
-      <h3>🐘 Jardim Zoológico</h3>
-      <p>Descontos em bilhetes para o Zoo.</p>
-      <a class="btn" href="https://intranet.spautores.net/wp-content/docsspa/CCD/protocolos/Bilhetes%20ZOO%20CCD%202026.pdf" target="_blank">Ver Protocolo</a>
-    </div>
-
-    <div class="card">
-      <h3>🎶 JAZZY Dance</h3>
-      <p>Aulas de dança com condições especiais.</p>
-      <a class="btn" href="https://intranet.spautores.net/wp-content/docsspa/CCD/protocolos/An%C3%BAncio%20de%20Protocolo%20JAZZY.pdf" target="_blank">Ver Protocolo</a>
-    </div>
-  </div>
-
-  <h3>💊 Saúde</h3>
-  <div class="grid">
-    <div class="card">
-      <h3>👓 Ergovisão</h3>
-      <p>Descontos em ótica e consultas.</p>
-      <a class="btn" href="https://intranet.spautores.net/wp-content/docsspa/CCD/protocolos/An%C3%BAncio%20de%20Protocolo%20Ergovis%C3%A3o.pdf" target="_blank">Ver Protocolo</a>
-    </div>
-  </div>
-
-  <h3>🌱 Bem-estar</h3>
-  <div class="grid">
-    <div class="card">
-      <h3>🧼 NATULIM</h3>
-      <p>Produtos ecológicos com desconto.</p>
-      <a class="btn" href="https://intranet.spautores.net/wp-content/docsspa/CCD/protocolos/An%C3%BAncio%20de%20Protocolo%20NATULIM.pdf" target="_blank">Ver Protocolo</a>
-    </div>
-  </div>
-
-</section>
+</div>
 
 <footer>
-  <p>CCD SPA © 2026</p>
+    CCD SPA © 2026
 </footer>
 
 </body>
