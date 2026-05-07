@@ -1,253 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-<title>Protocolos CCD SPA</title>
-
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:'Segoe UI',sans-serif;
-    background:#f3f4f6;
-    color:#111827;
-}
-
-/* HEADER */
-
-header{
-    background:linear-gradient(135deg,#0f172a,#1d4ed8);
-    padding:60px 20px;
-    text-align:center;
-    color:white;
-    box-shadow:0 5px 20px rgba(0,0,0,0.2);
-}
-
-header h1{
-    font-size:3rem;
-    margin-bottom:10px;
-}
-
-header p{
-    opacity:0.9;
-    font-size:1.1rem;
-}
-
-/* SECTION */
-
-.container{
-    max-width:1300px;
-    margin:auto;
-    padding:40px 20px;
-}
-
-.category{
-    margin-bottom:60px;
-}
-
-.category h2{
-    font-size:2rem;
-    color:#1d4ed8;
-    margin-bottom:25px;
-    border-left:6px solid #2563eb;
-    padding-left:15px;
-}
-
-/* GRID */
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:25px;
-}
-
-/* CARD */
-
-.card{
-    background:white;
-    border-radius:18px;
-    overflow:hidden;
-    transition:0.3s;
-    box-shadow:0 8px 25px rgba(0,0,0,0.06);
-}
-
-.card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 12px 30px rgba(0,0,0,0.15);
-}
-
-/* PREVIEW */
-
-.preview{
-    height:220px;
-    background:#e5e7eb;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    overflow:hidden;
-}
-
-.preview iframe{
-    width:100%;
-    height:100%;
-    border:none;
-}
-
-/* CONTENT */
-
-.content{
-    padding:20px;
-}
-
-.content h3{
-    margin-bottom:10px;
-    font-size:1.3rem;
-}
-
-.content p{
-    color:#4b5563;
-    line-height:1.5;
-}
-
-/* BUTTON */
-
-.btn{
-    display:inline-block;
-    margin-top:18px;
-    padding:12px 18px;
-    background:#2563eb;
-    color:white;
-    text-decoration:none;
-    border-radius:10px;
-    transition:0.3s;
-    font-weight:bold;
-}
-
-.btn:hover{
-    background:#1d4ed8;
-}
-
-/* FOOTER */
-
-footer{
-    background:#111827;
-    color:white;
-    text-align:center;
-    padding:25px;
-    margin-top:50px;
-}
-
-</style>
-</head>
-
-<body>
-
-<header>
-    <h1>Protocolos CCD SPA</h1>
-    <p>Benefícios e parcerias exclusivas para associados</p>
-</header>
-
-<div class="container">
-
-    <!-- LAZER -->
-
-    <div class="category">
-
-        <h2>🎯 Lazer</h2>
-
-        <div class="grid">
-
-            <!-- ZOO -->
-
-            <div class="card">
-
-                <div class="preview">
-                    <iframe 
-                    src="https://docs.google.com/gview?embedded=true&url=https://intranet.spautores.net/wp-content/docsspa/CCD/protocolos/Bilhetes%20ZOO%20CCD%202026.pdf">
-                    </iframe>
-                </div>
-
-                <div class="content">
-                    <h3>🐘 Jardim Zoológico</h3>
-
-                    <p>
-                        Descontos especiais para associados CCD SPA.
-                    </p>
-
-                    <a class="btn"
-                    href="https://intranet.spautores.net/wp-content/docsspa/CCD/protocolos/Bilhetes%20ZOO%20CCD%202026.pdf"
-                    target="_blank">
-                    Abrir Protocolo
-                    </a>
-                </div>
-
-            </div>
-
-            <!-- JAZZY -->
-
-            <div class="card">
-
-                <div class="preview">
-                    <iframe 
-                    src="https://docs.google.com/gview?embedded=true&url=https://intranet.spautores.net/wp-content/docsspa/CCD/protocolos/An%C3%BAncio%20de%20Protocolo%20JAZZY.pdf">
-                    </iframe>
-                </div>
-
-                <div class="content">
-                    <h3>🎶 JAZZY Dance</h3>
-
-                    <p>
-                        Aulas e condições especiais para associados.
-                    </p>
-
-                    <a class="btn"
-                    href="https://intranet.spautores.net/wp-content/docsspa/CCD/protocolos/An%C3%BAncio%20de%20Protocolo%20JAZZY.pdf"
-                    target="_blank">
-                    Abrir Protocolo
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
 
     </div>
-
-    <!-- SAÚDE -->
 
     <div class="category">
 
         <h2>💊 Saúde</h2>
 
-        <div class="grid">
+        <div class="row">
 
             <div class="card">
 
-                <div class="preview">
-                    <iframe 
-                    src="https://docs.google.com/gview?embedded=true&url=https://intranet.spautores.net/wp-content/docsspa/CCD/protocolos/An%C3%BAncio%20de%20Protocolo%20Ergovis%C3%A3o.pdf">
-                    </iframe>
-                </div>
+                <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=1974&auto=format&fit=crop">
 
-                <div class="content">
+                <div class="card-content">
+
                     <h3>👓 Ergovisão</h3>
 
                     <p>
-                        Benefícios em ótica, consultas e serviços especializados.
+                        Benefícios em ótica, consultas e serviços.
                     </p>
 
-                    <a class="btn"
-                    href="https://intranet.spautores.net/wp-content/docsspa/CCD/protocolos/An%C3%BAncio%20de%20Protocolo%20Ergovis%C3%A3o.pdf"
-                    target="_blank">
-                    Abrir Protocolo
+                    <a class="btn" href="protocolos/ergovisao.html">
+                        Ver Benefício
                     </a>
+
                 </div>
 
             </div>
@@ -256,34 +32,28 @@ footer{
 
     </div>
 
-    <!-- BEM ESTAR -->
-
     <div class="category">
 
         <h2>🌱 Bem-estar</h2>
 
-        <div class="grid">
+        <div class="row">
 
             <div class="card">
 
-                <div class="preview">
-                    <iframe 
-                    src="https://docs.google.com/gview?embedded=true&url=https://intranet.spautores.net/wp-content/docsspa/CCD/protocolos/An%C3%BAncio%20de%20Protocolo%20NATULIM.pdf">
-                    </iframe>
-                </div>
+                <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?q=80&w=1974&auto=format&fit=crop">
 
-                <div class="content">
+                <div class="card-content">
+
                     <h3>🧼 NATULIM</h3>
 
                     <p>
-                        Produtos ecológicos e sustentáveis com condições especiais.
+                        Produtos ecológicos e sustentáveis com desconto.
                     </p>
 
-                    <a class="btn"
-                    href="https://intranet.spautores.net/wp-content/docsspa/CCD/protocolos/An%C3%BAncio%20de%20Protocolo%20NATULIM.pdf"
-                    target="_blank">
-                    Abrir Protocolo
+                    <a class="btn" href="protocolos/natulim.html">
+                        Ver Benefício
                     </a>
+
                 </div>
 
             </div>
